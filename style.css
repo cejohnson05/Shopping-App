@@ -1,0 +1,33 @@
+h1 {
+	text-align: center;
+}
+
+#container {
+height: 100%;
+margin: 0 30%;
+background: rgb(255, 255, 255);
+box-shadow: 4px 0 4px rgb(41, 58, 65), -4px 0 4px rgb(41, 58, 65);
+font-family: Verdana, Geneva, sans-serif;
+}
+
+.addItemArea {
+	text-align: center;
+}
+
+#list {
+}
+
+ul {
+	list-style: none;
+	padding: 5px, 
+	margin: 0;
+	width: 300px;
+	display: block;
+	
+}
+li {
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 5px 10px;
+	color: #000;
+}
