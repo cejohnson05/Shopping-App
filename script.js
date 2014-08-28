@@ -12,6 +12,6 @@ $(document).ready(function() {
 		var submitText = document.getElementById("submitText");
 		var itemText = submitText.value;
 		addNewItem(document.getElementById("shoppingList"));
-	}		
+	});		
 
 }); 
