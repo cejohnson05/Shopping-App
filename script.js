@@ -11,7 +11,7 @@ $(document).ready(function() {
 	addItem.click(function() {
 		var submitText = document.getElementById("submitText");
 		var itemText = submitText.value;
-		addNewItem(document.getElementById("shoppingList");
+		addNewItem(document.getElementById("shoppingList"));
 	}		
 
 }); 
