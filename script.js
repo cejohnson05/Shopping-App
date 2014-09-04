@@ -5,6 +5,11 @@ $(document).ready(function() {
 
 	addItem.click = $(function() {
 		var toAdd = $('input[name=submitText]').val();
-		$('#shoppinglist').append('<li><input type="checkbox"/>' + toAdd  + '</li>');
+		$('#shoppinglist').append('<li><input type="checkbox"/>' + toAdd + '</li>');
 	});
+
+	removeItem.click = $(function() {
+		$('input:checked').hide();
+	});
+	
 });
