@@ -1,15 +1,17 @@
-$(document).ready(function() {
-	
-		var addItem = $('#AddItem');
-		var removeItem = $('#Remove');
+$(document).ready(function () {
+    var addItem = $('#addItem');
+    var removeItem = $('#remove');
+    
+    addItem.click(function () {
+        var toAdd = $('input#text').val();
+        $('#shoppingList').append('<li><input type="checkbox"/>' + toAdd + '</li>');
+    });
 
-	addItem.click = $(function() {
-		var toAdd = $('input[name=submitText]').val();
-		$('#shoppinglist').append('<li><input type="checkbox"/>' + toAdd + '</li>');
-	});
+    removeItem.click(function () {
+        var toRemove = $('<li>input type="checkbox"/></li>').checked();
+        alert(toRemove);
+        $('li:contains('+toRemove+')').remove();
+    });
 
-	removeItem.click = $(function() {
-		$('input:checked').hide();
-	});
-	
 });
+	
